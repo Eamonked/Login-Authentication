@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>LOGIN</display-name>
+  <welcome-file-list>
+    <welcome-file>login.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>loginAuthenticatorServlet</display-name>
+    <servlet-name>loginAuthenticatorServlet</servlet-name>
+    <servlet-class>all.loginAuthenticatorServlet</servlet-class>
+  </servlet>
+
+
+  <servlet-mapping>
+    <servlet-name>loginAuthenticatorServlet</servlet-name>
+    <url-pattern>/loginAuthenticatorServlet</url-pattern>
+  </servlet-mapping>
+
+<!--   <filter> -->
+<!--     <display-name>authenticationFillter</display-name> -->
+<!--     <filter-name>authenticationFillter</filter-name> -->
+<!--     <filter-class>all.authenticationFillter</filter-class> -->
+<!--   </filter> -->
+<!--   <filter-mapping> -->
+<!--     <filter-name>authenticationFillter</filter-name> -->
+<!--     <url-pattern>/authenticationFillter</url-pattern> -->
+<!--   </filter-mapping> -->
+</web-app>
